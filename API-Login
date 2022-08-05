@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "3a8fc6d0-1248-4fcb-a261-297e4d88666a",
+		"name": "apilab",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19637245"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"DEVUSER\",\r\n    \"password\":\"1234\"\r\n}"
+				},
+				"url": {
+					"raw": "api.nitirat.co.th/auth/login",
+					"host": [
+						"api",
+						"nitirat",
+						"co",
+						"th"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXlsb2FkIjp7ImlkIjoiNSIsImNyZWF0ZWRBdCI6IjIwMjItMDYtMjBUMDI6MDY6MzIuNjQ3WiIsInVwZGF0ZWRBdCI6IjIwMjItMDctMDFUMDU6MjA6MzYuOTgyWiIsImRlbGV0ZWRBdCI6bnVsbCwiZW1wbG95ZWVJZCI6IjAwMDAiLCJ1c2VybmFtZSI6IkRFVlVTRVIiLCJmaXJzdG5hbWUiOiIiLCJsYXN0TmFtZSI6IiIsIm5pY2tuYW1lIjoiIiwidGVhbSI6IkIiLCJyb2xlIjoiQURNSU4iLCJpc0FjdGl2ZSI6dHJ1ZX0sImlhdCI6MTY1Nzk1MDkyMCwiZXhwIjoxNjU3OTk0MTIwfQ.2_P6ldR6_79_R92x06yj8KuHZkZQUW_RTb_WVlzOFBs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "api.nitirat.co.th/user/profile",
+					"host": [
+						"api",
+						"nitirat",
+						"co",
+						"th"
+					],
+					"path": [
+						"user",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

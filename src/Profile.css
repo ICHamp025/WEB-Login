@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(152, 152, 139)
+}
+.box  {
+    min-width: 450px;
+    padding: 2rem;
+    margin: 5rem 10rem;
+    background-color: rgb(171, 165, 165);
+
+}
+
+.pro {
+    color: aliceblue;
+    font-size: 3rem;
+    border-bottom: 2px solid gray;
+
+} 
+
+.logout{
+    width: 100%;
+    text-align: center;
+}
+.box button {
+    padding: .5rem 2rem;
+    border: 3px solid rgb(158, 120, 185);
+    color: rgb(35, 10, 255);
+    background-color: #2d0909;
+
+}
+
+@media screen and (max-width: 768px){
+    .box{
+        margin: 5rem 0;
+    }
+}
